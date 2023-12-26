@@ -12,16 +12,16 @@ true
 
 """
 
+
 def isValidSubsequence(array, sequence):
     if array == sequence:
         return True
-    elif len(sequence)==1 and sequence in array:
+    elif len(sequence) == 1 and sequence in array:
         return True
     current_index = 0
-    for num in array: 
+    for num in array:
         if num == sequence[current_index]:
             current_index += 1
         if current_index == len(sequence):
             return True
     return False
-            

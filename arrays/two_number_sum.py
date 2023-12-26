@@ -14,10 +14,11 @@ Sample Output
 
 """
 
+
 def twoNumberSum(array, targetSum):
     array_map = {}
     for num in array:
-        if (targetSum-num) in array_map:
-            return targetSum-num , num 
+        if (targetSum - num) in array_map:
+            return targetSum - num, num
         array_map[num] = 1
     return []
